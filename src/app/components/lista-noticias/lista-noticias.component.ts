@@ -10,10 +10,6 @@ import { Inoticia } from '../../interfaces/inoticia.interface';
 })
 export class ListaNoticiasComponent {
   @Input() noticias: Inoticia[] = [];
-
-
-
-
   constructor(){
 
   }
