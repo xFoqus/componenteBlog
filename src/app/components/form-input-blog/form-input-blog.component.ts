@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Inoticia } from '../../interfaces/inoticia.interface';
 import { FormsModule } from '@angular/forms';
 
@@ -11,4 +11,17 @@ import { FormsModule } from '@angular/forms';
 })
 export class FormInputBlogComponent {
   newNoticia: Inoticia = {title:"",imageurl:"",body:"",date: new Date()};
+
+  @Output() noticiaPublicada: EventEmitter<Inoticia> = new EventEmitter();
+
+
+  getData(){
+    console.log(this.newNoticia);
+
+    this.noticiaPublicada.emit(this.newNoticia);
+
+  }
+
+
+
 }

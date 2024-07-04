@@ -18,4 +18,8 @@ export class AppComponent {
     {title:'Titulo 1',imageurl:'https://placehold.co/150x150',body: 'Cuerpo de noticia 1',date: new Date()},{
       title:'Titulo 2',imageurl:'https://placehold.co/150x150',body: 'Cuerpo de noticia 2',date: new Date()}
     ];
+
+  onNoticiaPublicada(event:Inoticia):void{
+    this.arrayNoticias.push(event);
+  }
 }

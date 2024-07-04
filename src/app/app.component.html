@@ -3,7 +3,9 @@
     <app-header></app-header>
   </header>
   <main>
-    <app-form-input-blog></app-form-input-blog>
+    <app-form-input-blog
+      (noticiaPublicada)="onNoticiaPublicada($event)"
+    ></app-form-input-blog>
     <app-lista-noticias [noticias]="arrayNoticias"></app-lista-noticias>
   </main>
 </div>
