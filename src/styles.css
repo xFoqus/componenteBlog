@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+.noticia {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.imagen {
+    flex: 0 0 auto; /* Tamaño fijo para la imagen */
+    margin-right: 20px; /* Espacio entre imagen y contenido */
+}
+
+.imagen img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Ajusta automáticamente la altura */
+}
+
+.contenido {
+    flex: 1 1 auto; /* Contenido flexible para ocupar el espacio restante */
+}
+
+.lista-container .contenido h2 {
+    text-align: left; /* Centra el título */
+    
+}
+
+.contenido p {
+    /* Estilo para el contenido de la noticia */
+}
+
+.contenido .fecha {
+    font-size: 0.8em; /* Tamaño de letra más pequeño para la fecha */
+    margin-top: 10px; /* Espacio arriba de la fecha */
+}

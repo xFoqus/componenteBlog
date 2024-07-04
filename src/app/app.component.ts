@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ListaNoticiasComponent } from './components/lista-noticias/lista-noticias.component';
 import { FormInputBlogComponent } from './components/form-input-blog/form-input-blog.component';
+import { Inoticia } from './interfaces/inoticia.interface';
 
 @Component({
   selector: 'app-root',
@@ -13,5 +14,8 @@ import { FormInputBlogComponent } from './components/form-input-blog/form-input-
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'componenteBlog';
+  arrayNoticias: Inoticia[] = [
+    {title:'Titulo 1',imageurl:'https://placehold.co/150x150',body: 'Cuerpo de noticia 1',date: new Date()},{
+      title:'Titulo 2',imageurl:'https://placehold.co/150x150',body: 'Cuerpo de noticia 2',date: new Date()}
+    ];
 }
