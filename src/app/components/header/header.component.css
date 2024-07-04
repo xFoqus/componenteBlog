@@ -1,0 +1,6 @@
+figure img{
+    width: 200px;
+}
+figure img:hover{
+    cursor: pointer;
+}
