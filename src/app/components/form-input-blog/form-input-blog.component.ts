@@ -18,7 +18,7 @@ export class FormInputBlogComponent {
   getData(){
     this.noticiaPublicada.emit(this.newNoticia);
 
-    this.newNoticia = { title: "", imageurl: "", body: "", date: new Date() };
+        this.newNoticia = { title: "", imageurl: "", body: "", date: new Date() };
 
     
   }

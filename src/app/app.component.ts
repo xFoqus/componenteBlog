@@ -19,10 +19,6 @@ export class AppComponent {
       title:'Titulo 2',imageurl:'https://placehold.co/150x150',body: 'Cuerpo de noticia 2',date: new Date("2024/06/23")}
     ];
 
-
-
-
-    
   onNoticiaPublicada(event:Inoticia):void{
 
     this.arrayNoticias.push(event);
