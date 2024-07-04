@@ -1,0 +1,11 @@
+
+figure{
+    margin: 0;
+}
+
+figure img{
+    width: 200px;
+}
+figure img:hover{
+    cursor: pointer;
+}

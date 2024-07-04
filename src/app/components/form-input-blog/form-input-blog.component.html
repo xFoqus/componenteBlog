@@ -1,0 +1,45 @@
+<div class="formulario-noticia">
+  <form>
+    <div>
+      <label for="titulo">Título:</label>
+      <input
+        type="text"
+        id="titulo"
+        name="titulo"
+        [(ngModel)]="newNoticia.title"
+        required
+      />
+    </div>
+    <div>
+      <label for="contenido">Contenido:</label>
+      <textarea
+        id="contenido"
+        name="contenido"
+        rows="5"
+        [(ngModel)]="newNoticia.body"
+        required
+      ></textarea>
+    </div>
+    <div>
+      <label for="fecha">Fecha de publicación:</label>
+      <input
+        type="date"
+        id="fecha"
+        name="fecha"
+        [(ngModel)]="newNoticia.date"
+        required
+      />
+    </div>
+    <div>
+      <label for="imagen">URL de la imagen:</label>
+      <input
+        type="url"
+        id="imagen"
+        name="imagen"
+        [(ngModel)]="newNoticia.imageurl"
+        required
+      />
+    </div>
+    <button (click)="getData()" type="submit">Publicar</button>
+  </form>
+</div>

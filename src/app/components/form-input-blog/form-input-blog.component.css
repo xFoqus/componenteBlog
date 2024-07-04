@@ -1,0 +1,43 @@
+
+
+.formulario-noticia{
+    padding-bottom: 20px;
+}
+.formulario-noticia form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-noticia label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.formulario-noticia input[type="text"],
+.formulario-noticia input[type="url"],
+.formulario-noticia input[type="date"],
+.formulario-noticia textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario-noticia textarea {
+    resize: vertical;
+}
+
+.formulario-noticia button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-self: flex-end;
+  }
+
+.formulario-noticia button:hover {
+    background-color: #0056b3;
+}
